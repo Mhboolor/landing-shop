@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../../../dist/output.css" />
+  </head>
+  <body>
+    <!-- Start Header Code -->
+    <header class="font-montserrat">
+      <div class="flex justify-between items-baseline px-10 py-6 shadow-md">
+        <div class="flex flex-1 justify-between items-center px-4 lg:hidden">
+          <div class="">
+            <img src="../../assets/images/logo.png.webp" alt="Logo" />
+            </div>
+            <div class="" id="BurgerBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            </div>
+          </div>
+        <div class="flex flex-col absolute transition-all duration-500 -left-96 top-0 px-10 z-50 py-4 bg-white w-80 h-full lg:relative lg:left-0 lg:w-full lg:py-0 lg:flex-row lg:flex-1 lg:items-end" id="Menu">
+          <div class="flex justify-between items-center mb-4 lg:mb-0">
+            <img src="../../assets/images/logo.png.webp" alt="Logo"/>
+            <svg id="CloseBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:hidden">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>            
+          </div>
+          <nav class="lg:flex lg:items-end lg:flex-1 lg:justify-center">
+            <ul class="flex flex-col lg:flex-row">
+              <li class="my-3 lg:my-0 lg:mx-8 xl:mx-10">
+                <a
+                  id="HomeLink"
+                  href="../../../index.html"
+                  class="text-base uppercase text-neutral-950 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:transition-all after:duration-500 after:bg-red-500 after:scale-0 hover:after:scale-100 hover:active"
+                  >Home</a
+                >
+              </li>
+              <li class="my-3 lg:my-0 lg:mx-8 xl:mx-10">
+                <a
+                  href="#"
+                  class="text-base uppercase text-neutral-950 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:transition-all after:duration-500 after:bg-red-500 after:scale-0 hover:after:scale-100"
+                  >Shop</a
+                >
+              </li>
+              <li class="my-3 lg:my-0 lg:mx-8 xl:mx-10">
+                <a
+                  href="#"
+                  class="text-base uppercase text-neutral-950 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:transition-all after:duration-500 after:bg-red-500 after:scale-0 hover:after:scale-100"
+                  >Pages</a
+                >
+              </li>
+              <li class="my-3 lg:my-0 lg:mx-8 xl:mx-10">
+                <a
+                  href="../blog/blog.html"
+                  class="text-base uppercase text-neutral-950 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:transition-all after:duration-500 after:bg-red-500 after:scale-100"
+                  >Blog</a
+                >
+              </li>
+              <li class="my-3 lg:my-0 lg:mx-8 xl:mx-10">
+                <a
+                  href="../contact/contact.html"
+                  class="text-base uppercase text-neutral-950 relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:transition-all after:duration-500 after:bg-red-500 after:scale-0 hover:after:scale-100"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="flex flex-col lg:flex-row lg:items-end">
+          <a
+            href="#"
+            class="my-3 lg:my-0 text-xs xl:text-base text-neutral-500 lg:after:content-['/'] after:px-2 after:cursor-auto"
+            >Login</a
+          >
+          <a href="#" class="my-3 lg:my-0 text-xs xl:text-base text-neutral-500 mr-6"
+            >Regester</a
+          >
+          <button class="mr-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+          <button
+            class="mr-5 my-4 lg:my-0 relative after:content-['2'] after:bg-black after:text-white after:rounded-full after:flex after:items-center after:justify-center after:text-xs after:w-4 after:h-4 after:absolute after:left-4 lg:after:left-0 lg:after:-right-1.5 after:-top-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+              />
+            </svg>
+          </button>
+          <button
+            class="mr-5 relative after:content-['2'] after:bg-black after:text-white after:rounded-full after:flex after:items-center after:justify-center after:text-xs after:w-4 after:h-4 after:absolute after:left-4 lg:after:left-0 lg:after:-right-1.5 after:-top-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        </div>  
+      </div>
+    </header>
+    <!-- End Header Code -->
+    <!-- Start Main Code -->
+    <main class="container m-auto lg:px-28 xl:px-48 mb-10">
+      <div class="flex items-center px-10 sm:px-16 md:px-24 lg:px-0 my-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 mr-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+          />
+        </svg>
+        <a href="../../../index.html" class="mr-2 font-semibold">Home</a>
+        <span class="mr-2 font-semibold">></span>
+        <span class="text-gray-500 font-semibold">Blog</span>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-evenly items-start ">
+        <div class="flex-1 mr-8 flex flex-col w-full px-10 sm:px-16 md:px-24 lg:px-0">
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-120"
+              style="
+                background-image: url('../../assets/images/blog-1.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                No Bad Blood! The Reason Why Tamr <br />
+                Judge Finally Made Up With...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-2.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                Pot Party! See Farrah Abraham <br />
+                Flaunt Smoking Body At...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-3.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                CMT Awards 2019 Red Carpet Arrivals <br />
+                Carrie Underwood, Sheryl...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 mr-8 flex flex-col w-full px-10 sm:px-16 md:px-24 lg:px-0">
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-4.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                No Bad Blood! The Reason Why Tamr <br />
+                Judge Finally Made Up With...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-5.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                Pot Party! See Farrah Abraham <br />
+                Flaunt Smoking Body At...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-6.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                CMT Awards 2019 Red Carpet Arrivals <br />
+                Carrie Underwood, Sheryl...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-7.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                CMT Awards 2019 Red Carpet Arrivals <br />
+                Carrie Underwood, Sheryl...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col w-full px-10 sm:px-16 md:px-24 lg:px-0">
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-8.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                No Bad Blood! The Reason Why Tamr <br />
+                Judge Finally Made Up With...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-56"
+              style="
+                background-image: url('../../assets/images/blog-9.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                Pot Party! See Farrah Abraham <br />
+                Flaunt Smoking Body At...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+          <div class="relative mb-16">
+            <div
+              class="bg-no-repeat bg-center bg-cover w-full h-120"
+              style="
+                background-image: url('../../assets/images/blog-10.jpg.webp');
+              "
+            ></div>
+            <div class="bg-white absolute -bottom-7 py-3 px-6">
+              <p class="font-semibold md:font-medium md:text-sm lg:text-base">
+                CMT Awards 2019 Red Carpet Arrivals <br />
+                Carrie Underwood, Sheryl...
+              </p>
+              <p class="text-gray-500 text-sm md:text-xs">by Ema Timahe | Seb 17, 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Code -->
+    <!-- Start Footer Code -->
+    <footer class="flex flex-col">
+      <div class="lg:flex">
+        <div class="flex flex-col lg:flex-row lg:flex-1">
+          <div class="flex flex-col sm:flex-row flex-1">
+            <div
+              class="bg-no-repeat bg-cover bg-center h-80 w-full flex flex-col items-center justify-center lg:flex-1 lg:h-96 relative"
+              style="
+                background-image: url('../../assets/images/insta-1.jpg.webp');
+              "
+            >
+              <div
+                class="opacity-0 flex flex-col items-center justify-center w-full h-full bg-white transition-all duration-400 hover:opacity-60"
+              >
+                <svg
+                  class="z-20"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 3.5H12M4.5 0.5H10.5C12.7091 0.5 14.5 2.29086 14.5 4.5V10.5C14.5 12.7091 12.7091 14.5 10.5 14.5H4.5C2.29086 14.5 0.5 12.7091 0.5 10.5V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5ZM7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5C9.15685 4.5 10.5 5.84315 10.5 7.5C10.5 9.15685 9.15685 10.5 7.5 10.5Z"
+                    stroke="#000000"
+                  />
+                </svg>
+                <a href="#" class="font-medium z-20">@Ashion-Shop</a>
+              </div>
+            </div>
+            <div
+              class="bg-no-repeat bg-cover bg-center h-80 w-full flex flex-col items-center justify-center lg:flex-1 lg:h-96 relative"
+              style="
+                background-image: url('../../assets/images/insta-2.jpg.webp');
+              "
+            >
+              <div
+                class="opacity-0 flex flex-col items-center justify-center w-full h-full bg-white transition-all duration-400 hover:opacity-60"
+              >
+                <svg
+                  class="z-20"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 3.5H12M4.5 0.5H10.5C12.7091 0.5 14.5 2.29086 14.5 4.5V10.5C14.5 12.7091 12.7091 14.5 10.5 14.5H4.5C2.29086 14.5 0.5 12.7091 0.5 10.5V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5ZM7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5C9.15685 4.5 10.5 5.84315 10.5 7.5C10.5 9.15685 9.15685 10.5 7.5 10.5Z"
+                    stroke="#000000"
+                  />
+                </svg>
+                <a href="#" class="font-medium z-20">@Ashion-Shop</a>
+              </div>
+            </div>
+            <div
+              class="bg-no-repeat bg-cover bg-center h-80 w-full flex flex-col items-center justify-center lg:flex-1 lg:h-96 relative"
+              style="
+                background-image: url('../../assets/images/insta-3.jpg.webp');
+              "
+            >
+              <div
+                class="opacity-0 flex flex-col items-center justify-center w-full h-full bg-white transition-all duration-400 hover:opacity-60"
+              >
+                <svg
+                  class="z-20"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 3.5H12M4.5 0.5H10.5C12.7091 0.5 14.5 2.29086 14.5 4.5V10.5C14.5 12.7091 12.7091 14.5 10.5 14.5H4.5C2.29086 14.5 0.5 12.7091 0.5 10.5V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5ZM7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5C9.15685 4.5 10.5 5.84315 10.5 7.5C10.5 9.15685 9.15685 10.5 7.5 10.5Z"
+                    stroke="#000000"
+                  />
+                </svg>
+                <a href="#" class="font-medium z-20">@Ashion-Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row flex-1">
+            <div
+              class="bg-no-repeat bg-cover bg-center h-80 w-full flex flex-col items-center justify-center lg:flex-1 lg:h-96 relative"
+              style="
+                background-image: url('../../assets/images/insta-4.jpg.webp');
+              "
+            >
+              <div
+                class="opacity-0 flex flex-col items-center justify-center w-full h-full bg-white transition-all duration-400 hover:opacity-60"
+              >
+                <svg
+                  class="z-20"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 3.5H12M4.5 0.5H10.5C12.7091 0.5 14.5 2.29086 14.5 4.5V10.5C14.5 12.7091 12.7091 14.5 10.5 14.5H4.5C2.29086 14.5 0.5 12.7091 0.5 10.5V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5ZM7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5C9.15685 4.5 10.5 5.84315 10.5 7.5C10.5 9.15685 9.15685 10.5 7.5 10.5Z"
+                    stroke="#000000"
+                  />
+                </svg>
+                <a href="#" class="font-medium z-20">@Ashion-Shop</a>
+              </div>
+            </div>
+            <div
+              class="bg-no-repeat bg-cover bg-center h-80 w-full flex flex-col items-center justify-center lg:flex-1 lg:h-96 relative"
+              style="
+                background-image: url('../../assets/images/insta-5.jpg.webp');
+              "
+            >
+              <div
+                class="opacity-0 flex flex-col items-center justify-center w-full h-full bg-white transition-all duration-400 hover:opacity-60"
+              >
+                <svg
+                  class="z-20"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 3.5H12M4.5 0.5H10.5C12.7091 0.5 14.5 2.29086 14.5 4.5V10.5C14.5 12.7091 12.7091 14.5 10.5 14.5H4.5C2.29086 14.5 0.5 12.7091 0.5 10.5V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5ZM7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5C9.15685 4.5 10.5 5.84315 10.5 7.5C10.5 9.15685 9.15685 10.5 7.5 10.5Z"
+                    stroke="#000000"
+                  />
+                </svg>
+                <a href="#" class="font-medium z-20">@Ashion-Shop</a>
+              </div>
+            </div>
+            <div
+              class="bg-no-repeat bg-cover bg-center h-80 w-full flex flex-col items-center justify-center lg:flex-1 lg:h-96 relative"
+              style="
+                background-image: url('../../assets/images/insta-6.jpg.webp');
+              "
+            >
+              <div
+                class="opacity-0 flex flex-col items-center justify-center w-full h-full bg-white transition-all duration-400 hover:opacity-60"
+              >
+                <svg
+                  class="z-20"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 3.5H12M4.5 0.5H10.5C12.7091 0.5 14.5 2.29086 14.5 4.5V10.5C14.5 12.7091 12.7091 14.5 10.5 14.5H4.5C2.29086 14.5 0.5 12.7091 0.5 10.5V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5ZM7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5C9.15685 4.5 10.5 5.84315 10.5 7.5C10.5 9.15685 9.15685 10.5 7.5 10.5Z"
+                    stroke="#000000"
+                  />
+                </svg>
+                <a href="#" class="font-medium z-20">@Ashion-Shop</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-14 container m-auto md:px-0">
+        <div class="lg:flex">
+          <div class="lg:flex-1">
+            <div class="sm:flex sm:items-center sm:justify-evenly sm:flex-1">
+              <div
+                class="flex justify-center items-center flex-col lg:items-baseline"
+              >
+                <img
+                  src="../../assets/images/logo.png.webp"
+                  alt="Footer-Logo"
+                  class="mb-5"
+                />
+                <p class="mb-5 sm:text-start text-gray-500">
+                  Lorem ipsum dolor sit amet, consectetur <br />
+                  adipiscing elit, sed do eiusmod <br />
+                  tempor incididunt cilisis.
+                </p>
+                <div class="flex mb-5 justify-center">
+                  <img
+                    class="mr-2"
+                    src="../../assets/images/payment-1.png.webp"
+                    alt="Footer-Payment-Image"
+                  />
+                  <img
+                    class="mr-2"
+                    src="../../assets/images/payment-2.png.webp"
+                    alt="Footer-Payment-Image"
+                  />
+                  <img
+                    class="mr-2"
+                    src="../../assets/images/payment-3.png.webp"
+                    alt="Footer-Payment-Image"
+                  />
+                  <img
+                    class="mr-2"
+                    src="../../assets/images/payment-4.png.webp"
+                    alt="Footer-Payment-Image"
+                  />
+                  <img
+                    class="mr-2"
+                    src="../../assets/images/payment-5.png.webp"
+                    alt="Footer-Payment-Image"
+                  />
+                </div>
+              </div>
+              <div class="flex items-center justify-center lg:items-baseline">
+                <ul class="flex items-start justify-center flex-col sm:flex-1">
+                  <li class="text-base font-semibold mb-3">QUICK LINKS</li>
+                  <li class="my-1 text-gray-600">
+                    <a href="#" class="text-base">About</a>
+                  </li>
+                  <li class="my-1 text-gray-600">
+                    <a href="#" class="text-base">Blogs</a>
+                  </li>
+                  <li class="my-1 text-gray-600">
+                    <a href="#" class="text-base">Contact</a>
+                  </li>
+                  <li class="my-1 text-gray-600">
+                    <a href="#" class="text-base">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="sm:flex sm:items-center sm:justify-evenly lg:flex-1">
+            <div class="flex items-center justify-center sm:flex-1">
+              <ul class="flex items-start justify-center flex-col">
+                <li class="text-base font-semibold mb-3">ACCOUNT</li>
+                <li class="my-1 text-gray-600">
+                  <a href="#" class="text-base">My Account</a>
+                </li>
+                <li class="my-1 text-gray-600">
+                  <a href="#" class="text-base">Orders Tracking</a>
+                </li>
+                <li class="my-1 text-gray-600">
+                  <a href="#" class="text-base">Checkout</a>
+                </li>
+                <li class="my-1 text-gray-600">
+                  <a href="#" class="text-base">Wishlist</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center justify-center flex-col sm:flex-1">
+              <h3 class="text-base font-semibold mb-3">NEWSLETTER</h3>
+              <div class="my-4 flex flex-col lg:relative lg:w-full">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="border rounded-full w-full p-3 mx-4 mb-4 placeholder:pl-2"
+                />
+                <button
+                  class="bg-red-600 text-white m-auto font-semibold rounded-full py-2 px-4 lg:absolute lg:-right-2.5 lg:top-1"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+              <div class="flex justify-center my-3">
+                <svg
+                  fill="#000000"
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 24 24"
+                  id="facebook"
+                  data-name="Flat Color"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-color w-5 h-5 m-2 cursor-pointer"
+                >
+                  <path
+                    id="primary"
+                    d="M14,6h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1H14A5,5,0,0,0,9,7v3H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1H9v7a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V14h2.22a1,1,0,0,0,1-.76l.5-2a1,1,0,0,0-1-1.24H13V7A1,1,0,0,1,14,6Z"
+                    style="fill: rgb(0, 0, 0)"
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Layer 1"
+                  class="w-5 h-5 m-2 cursor-pointer"
+                >
+                  <path
+                    d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z"
+                  />
+                </svg>
+                <svg
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="w-5 h-5 m-2 cursor-pointer"
+                >
+                  <rect width="16" height="16" id="icon-bound" fill="none" />
+                  <path
+                    d="M6.364,10.379L6.364,5.621L10.545,8L6.364,10.379ZM15.666,4.124C15.482,3.431 14.939,2.885 14.251,2.7C13.003,2.364 8,2.364 8,2.364C8,2.364 2.997,2.364 1.749,2.7C1.061,2.885 0.518,3.431 0.334,4.124C0,5.38 0,8 0,8C0,8 0,10.62 0.334,11.876C0.518,12.569 1.061,13.115 1.749,13.3C2.997,13.636 8,13.636 8,13.636C8,13.636 13.003,13.636 14.251,13.3C14.939,13.115 15.482,12.569 15.666,11.876C16,10.62 16,8 16,8C16,8 16,5.38 15.666,4.124"
+                  />
+                </svg>
+                <svg
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 m-2 cursor-pointer"
+                >
+                  <path
+                    d="M11 3.5H12M4.5 0.5H10.5C12.7091 0.5 14.5 2.29086 14.5 4.5V10.5C14.5 12.7091 12.7091 14.5 10.5 14.5H4.5C2.29086 14.5 0.5 12.7091 0.5 10.5V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5ZM7.5 10.5C5.84315 10.5 4.5 9.15685 4.5 7.5C4.5 5.84315 5.84315 4.5 7.5 4.5C9.15685 4.5 10.5 5.84315 10.5 7.5C10.5 9.15685 9.15685 10.5 7.5 10.5Z"
+                    stroke="#000000"
+                  />
+                </svg>
+                <svg
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  stroke="#000000"
+                  class="w-5 h-5 m-2 cursor-pointer"
+                >
+                  <path
+                    d="M17.6 56s19.2-28.8 14.78-36.32c-2.12-3.61-10-2.08-4.91 15.64 3.82 13.35 23.73 5.31 23.73-8.12a19.2 19.2 0 1 0-32.78 13.58"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t text-center pt-3 mt-4">
+          Copyright © 2023 All rights reserved | This is made with
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6 text-red-500 inline-block"
+          >
+            <path
+              d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+            />
+          </svg>
+
+          by Bolori
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Code -->
+    <script src="../../assets/script/script.js"></script>
+  </body>
+</html>
